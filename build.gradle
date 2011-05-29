@@ -1,0 +1,14 @@
+buildscript {
+    repositories {
+        mavenRepo urls: 'file:///shared/repos/m2/repository'
+    }
+    dependencies {
+        classpath 'com.jrocktech.gradle.plugins:gradle-plugin:1.0'
+    }
+}
+
+apply plugin: com.jrocktech.gradle.MakeDirsPlugin
+apply plugin: 'war'
+apply plugin: 'groovy'
+
+basePackageDir = 'com/lalaland'
